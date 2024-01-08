@@ -54,9 +54,8 @@ oynanan_mac_sayisi = soup.find_all('span', id=lambda x: x and x.endswith('lblOyu
 
 # Photoshop ile çalışma
 psApp = win32com.client.Dispatch("Photoshop.Application")
-psApp.Open(r"C:/Users/Hunlu/OneDrive/Masaüstü/deneme.psd")
+psApp.Open(r"Düzenlemekistediğiniz psd adresi.psd")
 doc = psApp.Application.ActiveDocument
-
 # Metin katmanlarını seçme photoshoptaki metin layer isimleri burası önemli
 puanText = doc.ArtLayers["puanText"].TextItem
 averajText = doc.ArtLayers["averajText"].TextItem
